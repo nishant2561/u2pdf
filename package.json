@@ -1,14 +1,15 @@
-
 {
   "name": "u2pdf",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://u2pdf.github.io/u2pdf/",
+  "homepage": "https://u2pdf.in/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -18,6 +19,7 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.7.2",
     "vite": "^6.0.5"
   }
